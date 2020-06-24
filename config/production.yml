@@ -1,0 +1,5 @@
+server:
+  origin: 'localhost' # TO CHANGE
+
+db:
+  synchronize: false
