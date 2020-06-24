@@ -4,9 +4,9 @@ import { HeroService } from "./hero.service";
 import { Query } from "@nestjs/graphql";
 import { CreateHeroInput } from "./inputs/create-hero.input";
 import { UseGuards } from "@nestjs/common";
-import { GetUser } from "src/auth/decorators/get-user.decorator";
-import { User } from "src/user/user.entity";
-import { GraphQLAuthGuard } from "src/auth/graphql.guard";
+import { GetUser } from "../auth/decorators/get-user.decorator";
+import { User } from "../user/user.entity";
+import { GraphQLAuthGuard } from "../auth/graphql.guard";
 
 @Resolver(() => HeroType)
 @UseGuards(GraphQLAuthGuard)

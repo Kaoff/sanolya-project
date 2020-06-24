@@ -2,10 +2,10 @@ import { Resolver, Args, Query, ResolveField, Parent } from '@nestjs/graphql';
 import { UserService } from './user.service';
 import { UserType } from './user.type';
 import { User } from './user.entity';
-import { GetUser } from 'src/auth/decorators/get-user.decorator';
+import { GetUser } from '../auth/decorators/get-user.decorator';
 import { UseGuards, Inject, forwardRef } from '@nestjs/common';
-import { GraphQLAuthGuard } from 'src/auth/graphql.guard';
-import { HeroService } from 'src/hero/hero.service';
+import { GraphQLAuthGuard } from '../auth/graphql.guard';
+import { HeroService } from '../hero/hero.service';
 
 @Resolver('User')
 @UseGuards(GraphQLAuthGuard)

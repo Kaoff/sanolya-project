@@ -3,7 +3,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { User } from './user.entity';
 import { Repository } from 'typeorm';
 import { UserRole } from './enums/user-roles.enum';
-import { GraphQLAuthGuard } from 'src/auth/graphql.guard';
+import { GraphQLAuthGuard } from '../auth/graphql.guard';
 
 @Injectable()
 @UseGuards(GraphQLAuthGuard)

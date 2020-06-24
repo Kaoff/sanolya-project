@@ -2,9 +2,9 @@ import { Module } from '@nestjs/common';
 import { UserService } from './user.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { User } from './user.entity';
-import { AuthModule } from 'src/auth/auth.module';
+import { AuthModule } from '../auth/auth.module';
 import { UserResolver } from './user.resolver';
-import { HeroModule } from 'src/hero/hero.module';
+import { HeroModule } from '../hero/hero.module';
 import { HeroService } from 'src/hero/hero.service';
 
 @Module({
